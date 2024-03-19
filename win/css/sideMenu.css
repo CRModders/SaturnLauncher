@@ -1,0 +1,133 @@
+.addProfileBtn {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-color: #00b341;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.addProfileBtn:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.1);
+    -webkit-transform: translateX(-50%) scale(1.1);
+    -moz-transform: translateX(-50%) scale(1.1);
+    -ms-transform: translateX(-50%) scale(1.1);
+    -o-transform: translateX(-50%) scale(1.1);
+}
+
+.addProfileBtn:active {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.05);
+    -webkit-transform: translateX(-50%) scale(1.05);
+    -moz-transform: translateX(-50%) scale(1.05);
+    -ms-transform: translateX(-50%) scale(1.05);
+    -o-transform: translateX(-50%) scale(1.05);
+}
+
+.profileButton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: rgb(155, 155, 155);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.profileButton:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.1);
+    -webkit-transform: translateX(-50%) scale(1.1);
+    -moz-transform: translateX(-50%) scale(1.1);
+    -ms-transform: translateX(-50%) scale(1.1);
+    -o-transform: translateX(-50%) scale(1.1);
+}
+
+.profileButton:active {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.05);
+    -webkit-transform: translateX(-50%) scale(1.05);
+    -moz-transform: translateX(-50%) scale(1.05);
+    -ms-transform: translateX(-50%) scale(1.05);
+    -o-transform: translateX(-50%) scale(1.05);
+}
+
+.settingsBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: rgb(155, 155, 155);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.settingsBtn:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.1);
+    -webkit-transform: translateX(-50%) scale(1.1);
+    -moz-transform: translateX(-50%) scale(1.1);
+    -ms-transform: translateX(-50%) scale(1.1);
+    -o-transform: translateX(-50%) scale(1.1);
+}
+
+.settingsBtn:active {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.05);
+    -webkit-transform: translateX(-50%) scale(1.05);
+    -moz-transform: translateX(-50%) scale(1.05);
+    -ms-transform: translateX(-50%) scale(1.05);
+    -o-transform: translateX(-50%) scale(1.05);
+}

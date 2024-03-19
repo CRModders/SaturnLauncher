@@ -1,0 +1,7 @@
+.newProfileScreen #exitBtn {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: calc(100% - 58px);
+    top: 20px;
+}
