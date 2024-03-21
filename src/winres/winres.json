@@ -38,18 +38,18 @@
             },
             "info": {
               "0409": {
-                "Comments": "",
-                "CompanyName": "",
+                "Comments": "Saturn Launcher",
+                "CompanyName": "CRModders",
                 "FileDescription": "Saturn Launcher",
                 "FileVersion": "1.0.0",
                 "InternalName": "SL",
                 "LegalCopyright": "",
                 "LegalTrademarks": "",
                 "OriginalFilename": "Saturn Launcher",
-                "PrivateBuild": "",
+                "PrivateBuild": "Saturn Launcher",
                 "ProductName": "Saturn Launcher",
                 "ProductVersion": "1.0.0",
-                "SpecialBuild": ""
+                "SpecialBuild": "Saturn Launcher"
               }
             }
           }

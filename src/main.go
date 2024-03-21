@@ -20,7 +20,10 @@ var (
 	win embed.FS
 	//go:embed data
 	data embed.FS
-
+	
+	dir = LocalAppData
+	settingsDir = dir + "\\Saturn_Launcher\\settings.json"
+	
 	port = randInt(255, 9999)
 )
 
@@ -30,7 +33,6 @@ func randInt(min int, max int) int {
 }
 
 func main() {
-
 	app := webview.New(edition == "dev")
 //	defer app.Destroy()
 

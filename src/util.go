@@ -22,8 +22,6 @@ import "C"
 import "unsafe"
 import webview "github.com/webview/webview_go"
 
-// Sets Application Icon from resources embedded in rsrc_windows_amd64.syso / rsrc_windows_386.syso
-// In this example, syso files were generated using https://github.com/tc-hib/go-winres
 func SetApplicationIcon(app webview.WebView, name string)  {
 	hwnd := app.Window()
 	cstr := C.CString(name)
@@ -31,7 +29,6 @@ func SetApplicationIcon(app webview.WebView, name string)  {
 	C.set_resource_icon(hwnd, cstr)
 }
 
-// Sets Application Icon from external file
 func SetApplicationIconFromExternal(app webview.WebView, path string) {
 	hwnd := app.Window()
 	cstr := C.CString(path)

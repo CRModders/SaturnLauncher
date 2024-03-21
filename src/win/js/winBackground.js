@@ -1,3 +1,4 @@
+const backgroundSel = document.getElementById('background-select');
 const canvas = document.createElement('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -18,29 +19,30 @@ for (let i = 0; i < numParticles; i++) {
     });
 }
 
-function animate() {
+function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    for (let i = 0; i < particles.length; i++) {
-        const particle = particles[i];
+    if (backgroundSel.value === "particles") {
+        for (let i = 0; i < particles.length; i++) {
+            const particle = particles[i];
+            particle.x += Math.cos(particle.angle) * particle.speed;
+            particle.y += Math.sin(particle.angle) * particle.speed;
 
-        particle.x += Math.cos(particle.angle) * particle.speed;
-        particle.y += Math.sin(particle.angle) * particle.speed;
+            if (particle.x < 0 || particle.x > canvas.width) {
+                particle.angle = Math.PI - particle.angle;
+            }
+            if (particle.y < 0 || particle.y > canvas.height) {
+                particle.angle = -particle.angle;
+            }
 
-        if (particle.x < 0 || particle.x > canvas.width) {
-            particle.angle = Math.PI - particle.angle;
+            ctx.beginPath();
+            ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+            ctx.fillStyle = particle.color;
+            ctx.fill();
         }
-        if (particle.y < 0 || particle.y > canvas.height) {
-            particle.angle = -particle.angle;
-        }
-
-        ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        ctx.fillStyle = particle.color;
-        ctx.fill();
     }
 
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateParticles);
 }
 
-animate();
+animateParticles();
